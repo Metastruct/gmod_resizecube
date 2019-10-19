@@ -164,6 +164,7 @@ local faces = {
 
 if CLIENT then
 
+	if false then
 	hook.Add( "Think", "sent_resizecube", function()
 		if LocalPlayer():KeyDown( IN_ATTACK2 ) then
 			if not CurrentCube then return end
@@ -268,6 +269,7 @@ if CLIENT then
 			break
 		end
 	end )
+	end
 
 else
 
